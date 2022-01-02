@@ -1,0 +1,21 @@
+function palindrome(str) {
+  
+ 
+
+  str=str.replace(/[\W_]/g,'').toLowerCase();
+  
+  
+  var test=str.length/2;
+  
+    var firstStr=str.slice(0,test);
+    var secondStr=str.slice(-test).split('').reverse().join('');
+    
+
+  if(firstStr===secondStr){
+    return true;
+  }
+  return false;
+
+}
+
+palindrome("0_0 (: /-\ :) 0-0");

@@ -1,0 +1,8 @@
+function palindrome(str) {
+  str=str.toLowerCase().match(/[A-Za-z0-9]/g).join('');
+  console.log(str)
+  
+return str==str.split('').reverse().join('');
+}
+
+palindrome("A man, a plan, a canal. Panama");
